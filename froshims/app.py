@@ -7,6 +7,6 @@ app = Flask(__name__) # Turn this file into a Flask app
 def index():
 	return render_template("index.html")
 
-@app.route("/register", methods=["GET", "POST"])
+@app.route("/register", methods=["POST"])
 def register():
 	return render_template("success.html")
