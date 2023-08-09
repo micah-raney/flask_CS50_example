@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %} Frosh IMs Registrant Page {% endblock %}
+
+{% block body %}
+<h1>Registrants</h1>
+<ul>
+    {% for name in registrants %}
+    <li>{{ name }}: {{ registrants[name] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
