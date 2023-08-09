@@ -15,6 +15,8 @@ def index():
 def register():
 	name = request.form.get("name")
 	sport = request.form.get("sport")
+	if ( (sport not in sports) or (not name) ):
+		return render_template("failure.html")
 	registrants[name] = sport
 	return render_template("success.html")
 
