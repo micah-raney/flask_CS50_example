@@ -2,5 +2,17 @@
 {% block title %} Frosh IMs Home {% endblock %}
 
 {% block body %}
-Hello World
+<form action="/register" method="post">
+	<input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+	
+	<select>
+		<option disabled selected>Sport</option>
+
+		<option value="Basketball">Basketball</option>
+		<option value="Soccer">Soccer</option>
+		<option value="Ultimate Frisbee">Ultimate Frisbee</option>
+	</select>
+
+	<button type="submit">Register</button>
+</form>
 {% endblock %}
